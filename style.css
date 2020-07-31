@@ -1,0 +1,56 @@
+.sofa {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    background: url("sofa.png") no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+/* transparace to svg */
+.sofa svg {
+    mix-blend-mode: multiply;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label.grey {
+    background: black;
+}
+
+label.red {
+    background: red;
+}
+
+label.blue {
+    background: blue;
+}
+
+label.orange {
+    background: orange;
+}
+
+.cls-1 {
+    fill: grey;
+}
+
+#grey-radio:checked .sofa .cls-1 {
+    fill: grey;
+}
+
+#red-radio:checked ~ .sofa .cls-1 {
+    fill: red;
+}
+
+#blue-radio:checked ~ .sofa .cls-1 {
+    fill: blue;
+}
+
+#orange-radio:checked ~ .sofa .cls-1 {
+    fill: orange;
+}
